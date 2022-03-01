@@ -1,0 +1,11 @@
+<h2>All lessons</h2>
+
+<h4>Total lessons: {{ lessons?.length }}</h4>
+
+<input class="search-bar" placeholder="Search">
+
+<div class="lessons-list-container">
+    <app-lessons-list [lessons]="lessons"></app-lessons-list>
+</div>
+
+<p>lesson selected: {{lesson | json}}</p>
